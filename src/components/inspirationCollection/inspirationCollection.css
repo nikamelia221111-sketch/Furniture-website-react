@@ -1,0 +1,39 @@
+section.Inspiration-Collection {
+    div {
+        h2 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 32px;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+    }
+
+    .Inspiration-Collection-images {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+
+        .image1 {
+            margin-top: 38px;
+        }
+
+        .image2 {
+            margin-bottom: 38px;
+        }
+
+        .image3 {
+            margin-top: 38px;
+        }
+    }
+}

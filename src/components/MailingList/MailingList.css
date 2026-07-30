@@ -1,0 +1,82 @@
+.Join-Our-Mailing-List {
+
+    background-color: #F2F5FF;
+
+    div {
+        padding-top: 60px;
+
+        h2 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 32px;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 10px;
+        }
+
+        p {
+            max-width: 514px;
+            margin: 0 auto;
+            text-align: center;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 39px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+
+    .email-form-container {
+        padding-top: 0;
+        display: flex;
+        gap: 0;
+        margin-top: 40px;
+        justify-content: center;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid #054C73 1px;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    input[type="email"] {
+        height: 70px;
+        padding: 0 16px;
+        border: none;
+        font-size: 14px;
+        outline: none;
+        flex: 1;
+        min-width: 200px;
+        color: #333;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    input[type="email"]::placeholder {
+        color: #bbb;
+    }
+
+    input[type="email"]:focus {
+        background-color: #fafafa;
+    }
+
+    button[type="submit"] {
+        padding: 12px 32px;
+        background-color: #054C73;
+        color: white;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #043a54;
+    }
+
+    button[type="submit"]:active {
+        background-color: #032f44;
+    }
+
+    padding-bottom: 60px;
+}

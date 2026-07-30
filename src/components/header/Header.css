@@ -1,0 +1,45 @@
+header {
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+        font-family: 'Montserrat', sans-serif;
+
+        div {
+
+            max-width: 1200px;
+
+            .title {
+                margin-left: 120px;
+                font-size: 34px;
+                font-weight: 700;
+                color: #054C73;
+                text-decoration: none;
+
+            }
+
+            nav {
+
+                ul {
+                    display: flex;
+                    gap: 60px;
+
+                    .margin-right {
+                        margin-right: 120px;
+                    }
+
+                    li {
+                        a {
+                            font-weight: 600;
+                            font-size: 14px;
+                            color: black;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

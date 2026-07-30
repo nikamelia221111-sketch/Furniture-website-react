@@ -1,0 +1,58 @@
+.Beautify-Your-Space {
+    margin-top: 60px;
+    gap: 62px;
+    align-items: center;
+    height: 874px;
+    display: flex;
+    justify-content: center;
+    background-color: #F2F5FF;
+
+    div.left {
+        align-items: center;
+
+        h2 {
+            font-weight: 700;
+            font-size: 32px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        p {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 39px;
+            max-width: 514px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        button {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            background-color: #054C73;
+            width: 230px;
+            height: 70px;
+            border-radius: 50px;
+            border: none;
+            color: #FFFFFF;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+    }
+
+    .right {
+
+        img {
+            position: relative;
+            z-index: 1;
+        }
+
+        .deco {
+            z-index: 0;
+            position: relative;
+            left: -4px;
+            top: -230px;
+        }
+    }
+}
