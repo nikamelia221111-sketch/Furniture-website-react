@@ -1,62 +1,63 @@
-
-
 .herosec {
     background: url('../../assets/Herosecimage.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 750px;
+    background-position: center;
+    min-height: 750px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
+    padding: 24px;
     div {
-        background-color: #DFE9F4;
-        width: 644px;
-        height: 444px;
+
+        background: var(--surface);
+        color: var(--text);
+        width: min(100%, 644px);
+        min-height: 444px;
         font-family: 'Montserrat', sans-serif;
-        border-radius: 10px;
+        border-radius: 16px;
         margin-right: 90px;
         padding: 38px 46px 42px 40px;
-
-
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
         span {
+
             font-weight: 600;
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 3px;
-
+            color: var(--accent);
         }
-
         h2 {
+
             font-weight: 700;
             font-size: 52px;
             line-height: 65px;
-            color: #054C73;
+            color: var(--accent);
             margin-top: 20px;
-
         }
-
         p {
+
             font-weight: 500;
             font-size: 18px;
             line-height: 39px;
-            color: #333333;
+            color: var(--muted);
             margin-top: 20px;
         }
-
         button {
             font-weight: 700;
             font-size: 16px;
             line-height: 100%;
-            background-color: #054C73;
+            background-color: var(--accent);
             width: 230px;
             height: 70px;
             border-radius: 50px;
             border: none;
-            color: #FFFFFF;
+            color: var(--button-text);
             cursor: pointer;
             margin-top: 30px;
+
         }
     }
 }

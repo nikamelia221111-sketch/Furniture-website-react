@@ -1,10 +1,6 @@
-import './header.css'
+import './Header.css'
 
-function header() {
-
-
-
-
+function Header({ darkMode = false, toggleDarkMode = () => {} }) {
     return (
         <>
             <header>
@@ -14,29 +10,26 @@ function header() {
                     </div>
                     <div>
                         <nav>
-
                             <ul>
                                 <li>
                                     <a href="#">Home</a>
-
                                 </li>
                                 <li>
-
                                     <a href="#">Services</a>
-
                                 </li>
                                 <li>
-
                                     <a href="#">Doctors</a>
-
                                 </li>
                                 <li>
-
                                     <a href="#">Products</a>
-
                                 </li>
                                 <li className="margin-right">
                                     <a href="#">Gallery</a>
+                                </li>
+                                <li>
+                                    <button onClick={toggleDarkMode}>
+                                        {darkMode ? '☀️ Light' : '🌙 Dark'}
+                                    </button>
                                 </li>
                             </ul>
                         </nav>
@@ -47,5 +40,4 @@ function header() {
     )
 }
 
-
-export default header
+export default Header

@@ -1,5 +1,7 @@
  .Browse-The-Range {
      margin-top: 60px;
+     color: var(--text);
+     padding: 0 24px;
 
      div {
          h2 {
@@ -7,28 +9,35 @@
              font-weight: 700;
              font-size: 32px;
              font-family: 'Montserrat', sans-serif;
+             color: var(--text);
+
          }
 
          p {
+
              margin-top: 20px;
              text-align: center;
              font-weight: 400;
              font-size: 20px;
              font-family: 'Montserrat', sans-serif;
+             color: var(--muted);
          }
-
      }
 
      .Browse-The-Range-images {
+
          margin-top: 50px;
          display: flex;
          justify-content: center;
          gap: 20px;
+         flex-wrap: wrap;
 
          div {
              p {
+
                  font-weight: 600;
                  font-size: 24px;
+                 color: var(--text);
              }
          }
      }

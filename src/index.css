@@ -1,43 +1,75 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+:root {
+  color-scheme: light;
+  --bg: #f7f8fc;
+  --surface: #ffffff;
+  --surface-muted: #f2f5ff;
+  --surface-strong: #dfe9f4;
+  --text: #1f2937;
+  --muted: #4b5563;
+  --accent: #054c73;
+  --accent-strong: #03344f;
+  --footer-bg: #03344f;
+  --border: rgba(5, 76, 115, 0.16);
+  --shadow: 0 20px 45px rgba(3, 52, 79, 0.12);
+  --button-text: #ffffff;
+  --button-hover: #043a54;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+.theme-light {
+  color-scheme: light;
+  --bg: #f7f8fc;
+  --surface: #ffffff;
+  --surface-muted: #f2f5ff;
+  --surface-strong: #dfe9f4;
+  --text: #1f2937;
+  --muted: #4b5563;
+  --accent: #054c73;
+  --accent-strong: #03344f;
+  --footer-bg: #03344f;
+  --border: rgba(5, 76, 115, 0.16);
+  --shadow: 0 20px 45px rgba(3, 52, 79, 0.12);
+  --button-text: #ffffff;
+  --button-hover: #043a54;
 }
+
+.theme-dark {
+  color-scheme: dark;
+  --bg: #07131d;
+  --surface: #112332;
+  --surface-muted: #162d3f;
+  --surface-strong: #1a3850;
+  --text: #f5f7fa;
+  --muted: #bed0de;
+  --accent: #7dd3fc;
+  --accent-strong: #b8e8ff;
+  --footer-bg: #061723;
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  --button-text: #07131d;
+  --button-hover: #dff7ff;
+}
+
 body {
-	line-height: 1;
+  margin: 0;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
-ol, ul {
-	list-style: none;
+
+* {
+  box-sizing: border-box;
 }
-blockquote, q {
-	quotes: none;
+
+a {
+  color: inherit;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+button {
+  font-family: inherit;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+#root {
+  min-height: 100vh;
 }

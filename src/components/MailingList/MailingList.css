@@ -1,9 +1,10 @@
 .Join-Our-Mailing-List {
-
-    background-color: #F2F5FF;
+    background-color: var(--surface-muted);
+    color: var(--text);
+    padding: 60px 24px 60px;
 
     div {
-        padding-top: 60px;
+        padding-top: 0;
 
         h2 {
             text-align: center;
@@ -11,9 +12,12 @@
             font-size: 32px;
             font-family: 'Montserrat', sans-serif;
             margin-bottom: 10px;
+            color: var(--text);
+
         }
 
         p {
+
             max-width: 514px;
             margin: 0 auto;
             text-align: center;
@@ -21,6 +25,7 @@
             font-size: 20px;
             line-height: 39px;
             font-family: 'Montserrat', sans-serif;
+            color: var(--muted);
         }
     }
 
@@ -33,12 +38,15 @@
         max-width: 500px;
         margin-left: auto;
         margin-right: auto;
-        border: solid #054C73 1px;
-        border-radius: 3px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
         overflow: hidden;
+        background: var(--surface);
+
     }
 
     input[type="email"] {
+
         height: 70px;
         padding: 0 16px;
         border: none;
@@ -46,37 +54,39 @@
         outline: none;
         flex: 1;
         min-width: 200px;
-        color: #333;
+        color: var(--text);
+        background: var(--surface);
         font-family: 'Montserrat', sans-serif;
     }
 
     input[type="email"]::placeholder {
-        color: #bbb;
+        color: var(--muted);
     }
 
     input[type="email"]:focus {
-        background-color: #fafafa;
+        background-color: var(--surface-strong);
     }
 
     button[type="submit"] {
         padding: 12px 32px;
-        background-color: #054C73;
-        color: white;
+        background-color: var(--accent);
+        color: var(--button-text);
         border: none;
         font-size: 14px;
         font-weight: 600;
         cursor: pointer;
         transition: background-color 0.3s ease;
         font-family: 'Montserrat', sans-serif;
+
     }
 
     button[type="submit"]:hover {
-        background-color: #043a54;
+        background-color: var(--button-hover);
+
     }
 
     button[type="submit"]:active {
-        background-color: #032f44;
-    }
+        background-color: var(--accent-strong);
 
-    padding-bottom: 60px;
+    }
 }

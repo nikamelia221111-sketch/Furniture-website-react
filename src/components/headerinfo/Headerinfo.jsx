@@ -1,29 +1,32 @@
-import freedelivery from '../../assets/Free-delivery.svg'
-import authenticity from '../../assets/authenticity.svg'
-import support from '../../assets/support.svg'
+import FreeDelivery from '../../assets/Free-delivery.svg'
+import Authenticity from '../../assets/authenticity.svg'
+import Support from '../../assets/Support.svg'
+import SupportDark from '../../assets/Support-Dark.svg'
+import AuthenticityDark from '../../assets/Authenticity-Dark.png'
+import FreeDeliveryDark from '../../assets/Free-Delivery-Dark.svg'
 import './headerinfo.css'
 
-function Headerinfo() {
+function Headerinfo({ darkMode = false }) {
     return (
         <>
             <div className="headerinfo">
                 <div>
                     <div>
-                        <img src={freedelivery} alt="free-delivery-icon" />
+                        <img src={darkMode ? FreeDeliveryDark : FreeDelivery} alt="free-delivery-icon" />
                         <div className="test">
                             <p>Free Delivery</p>
                             <span>Lorem ipsum dolor sit amet.</span>
                         </div>
                     </div>
                     <div className="gap">
-                        <img src={support} alt="support-icon" />
+                        <img src={darkMode ? SupportDark : Support} alt="support-icon" />
                         <div className="test">
                             <p>Support 24/7</p>
                             <span>Lorem ipsum dolor sit amet.</span>
                         </div>
                     </div>
                     <div className="gap">
-                        <img src={authenticity} alt="authenticity-icon" />
+                        <img src={darkMode ? AuthenticityDark : Authenticity} alt="authenticity-icon" />
                         <div className="test">
                             <p>100% Authentic</p>
                             <span>Lorem ipsum dolor sit amet.</span>
@@ -34,7 +37,5 @@ function Headerinfo() {
         </>
     )
 }
-
-
 
 export default Headerinfo

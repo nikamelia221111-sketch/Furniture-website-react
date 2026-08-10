@@ -14,12 +14,10 @@ function footer() {
                     <span>Beauty Care</span>
                     <p>Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris.</p>
-                    <span>Follow Us</span>
+                    <a href="#">Follow Us</a>
                 </div>
                 <div>
-                    <span>
-                        Instagram Shop
-                    </span>
+                    <a href="#">Instagram Shop</a>
                     <div class="instagram-shop-images">
                         <img src={instagramShop1} alt="Instagram Shop image 1" />
                         <img src={instagramShop2} alt="Instagram Shop image 2" />
