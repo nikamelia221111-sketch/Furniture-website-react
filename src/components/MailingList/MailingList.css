@@ -9,7 +9,7 @@
         h2 {
             text-align: center;
             font-weight: 700;
-            font-size: 32px;
+            font-size: clamp(24px, 4vw, 32px);
             font-family: 'Montserrat', sans-serif;
             margin-bottom: 10px;
             color: var(--text);
@@ -22,8 +22,8 @@
             margin: 0 auto;
             text-align: center;
             font-weight: 400;
-            font-size: 20px;
-            line-height: 39px;
+            font-size: clamp(16px, 2vw, 20px);
+            line-height: 1.8;
             font-family: 'Montserrat', sans-serif;
             color: var(--muted);
         }
@@ -53,7 +53,7 @@
         font-size: 14px;
         outline: none;
         flex: 1;
-        min-width: 200px;
+        min-width: 0;
         color: var(--text);
         background: var(--surface);
         font-family: 'Montserrat', sans-serif;
@@ -88,5 +88,21 @@
     button[type="submit"]:active {
         background-color: var(--accent-strong);
 
+    }
+}
+
+@media (max-width: 480px) {
+    .Join-Our-Mailing-List {
+        padding: 40px 16px;
+
+        .email-form-container {
+            flex-direction: column;
+        }
+
+        input[type="email"],
+        button[type="submit"] {
+            width: 100%;
+            min-height: 56px;
+        }
     }
 }

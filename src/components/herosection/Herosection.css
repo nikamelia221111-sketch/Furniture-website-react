@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 750px;
+    min-height: clamp(560px, 75vh, 750px);
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -11,16 +11,14 @@
     padding: 24px;
     div {
 
-        background: var(--surface);
+        background: var(--surface-strong);
         color: var(--text);
         width: min(100%, 644px);
         min-height: 444px;
         font-family: 'Montserrat', sans-serif;
         border-radius: 16px;
-        margin-right: 90px;
-        padding: 38px 46px 42px 40px;
-        border: 1px solid var(--border);
-        box-shadow: var(--shadow);
+        margin-right: clamp(0px, 7vw, 90px);
+        padding: clamp(28px, 5vw, 38px) clamp(24px, 5vw, 46px);
         span {
 
             font-weight: 600;
@@ -32,8 +30,8 @@
         h2 {
 
             font-weight: 700;
-            font-size: 52px;
-            line-height: 65px;
+            font-size: clamp(32px, 5vw, 52px);
+            line-height: 1.2;
             color: var(--accent);
             margin-top: 20px;
         }
@@ -41,7 +39,7 @@
 
             font-weight: 500;
             font-size: 18px;
-            line-height: 39px;
+            line-height: 1.8;
             color: var(--muted);
             margin-top: 20px;
         }
@@ -58,6 +56,55 @@
             cursor: pointer;
             margin-top: 30px;
 
+        }
+    }
+}
+
+
+
+@media (max-width: 960px) {
+    .herosec {
+        display: flex;
+        justify-content: center;
+        div {
+            background: var(--surface-clear);
+            margin-right: 0px;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .herosec {
+        min-height: 0;
+        div {
+            span {
+                font-size: 14px;
+            }
+            h2 {
+                line-height: 40px;
+                font-size: 30px;
+            }
+            p {
+                line-height: 32px;
+                font-size: 16px;
+            }
+            button {
+                max-height: 45px;
+                max-width: 157px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .herosec {
+        min-height: 500px;
+        padding: 16px;
+
+        div {
+            min-height: 0;
+            border-radius: 12px;
         }
     }
 }

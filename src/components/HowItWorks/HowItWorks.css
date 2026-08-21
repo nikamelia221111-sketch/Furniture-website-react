@@ -2,24 +2,24 @@
     border-top: 1px solid var(--border);
     margin-top: 60px;
     padding: 60px 24px 0;
-    margin-bottom: 197px;
+    margin-bottom: 200px;
     color: var(--text);
 
     div {
         h2 {
             text-align: center;
             font-weight: 700;
-            font-size: 32px;
+            font-size: clamp(24px, 4vw, 32px);
             font-family: 'Montserrat', sans-serif;
             color: var(--text);
 
         }
 
         p {
-            margin-top: 20px;
             text-align: center;
-            font-weight: 400;
-            font-size: 20px;
+            max-width: 600px;
+            margin: 20px auto 0;
+            font-size: clamp(16px, 2vw, 20px);
             font-family: 'Montserrat', sans-serif;
             color: var(--muted);
 
@@ -28,10 +28,20 @@
 
     .How-It-Works-Images {
         margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: clamp(24px, 4vw, 60px);
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 381px;
+            height: auto;
+            margin: 0 auto;
+        }
 
         div {
             max-width: 381px;
@@ -40,7 +50,7 @@
 
                 text-align: center;
                 font-weight: 600;
-                font-size: 24px;
+                font-size: clamp(20px, 2.5vw, 24px);
                 font-family: 'Montserrat', sans-serif;
                 color: var(--text);
             }
@@ -48,10 +58,47 @@
             p {
 
                 font-weight: 400;
-                font-size: 18px;
+                font-size: clamp(16px, 2vw, 18px);
                 color: var(--muted);
             }
         }
 
     }
+}
+
+
+@media (max-width: 1246px) {
+    section.How-It-Works {
+        margin-bottom: 150px;
+
+        .How-It-Works-Images {
+            display: flex;
+            grid-template-columns: 1fr;
+            flex-direction: column;
+            align-items: center;
+            max-width: 420px;
+        }
+    }
+}
+
+
+@media (max-width: 440px) {
+    .How-It-Works {
+        margin-top: clamp(32px, 6vw, 60px);
+        margin-bottom: clamp(70px, 12vw, 200px);
+        padding: clamp(32px, 6vw, 60px) 16px 0;
+
+        .How-It-Works-Images {
+            grid-template-columns: 1fr;
+            max-width: 420px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+        }
+    }
+
 }

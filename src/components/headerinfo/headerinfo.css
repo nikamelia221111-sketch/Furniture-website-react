@@ -52,3 +52,19 @@
 .headerinfo:hover {
     cursor: default;
 }
+
+@media (max-width: 1269px) {
+    div.headerinfo {
+        div {
+            flex-direction: column;
+            div {
+                flex-direction: row;
+            }
+            div.gap {
+                margin-top: 40px;
+                flex-direction: row;
+                margin-left: 0;
+            }
+        }
+    }
+}

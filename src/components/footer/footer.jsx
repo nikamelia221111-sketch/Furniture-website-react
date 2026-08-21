@@ -10,7 +10,7 @@ function footer() {
     return (
         <>
             <footer>
-                <div class="text">
+                <div className="text">
                     <span>Beauty Care</span>
                     <p>Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris.</p>
@@ -18,11 +18,15 @@ function footer() {
                 </div>
                 <div>
                     <a href="#">Instagram Shop</a>
-                    <div class="instagram-shop-images">
+                    <div className="instagram-shop-images">
+                        <div>
                         <img src={instagramShop1} alt="Instagram Shop image 1" />
                         <img src={instagramShop2} alt="Instagram Shop image 2" />
+                        </div>
+                        <div>
                         <img src={instagramShop3} alt="Instagram Shop image 3" />
                         <img src={instagramShop4} alt="Instagram Shop image 4" />
+                        </div>
                     </div>
                 </div>
             </footer>

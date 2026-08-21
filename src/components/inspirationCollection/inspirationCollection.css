@@ -1,41 +1,87 @@
 section.Inspiration-Collection {
     color: var(--text);
     padding: 60px 24px 0;
+
     div {
         h2 {
             text-align: center;
             font-weight: 700;
-            font-size: 32px;
+            font-size: clamp(24px, 4vw, 32px);
             font-family: 'Montserrat', sans-serif;
             margin-bottom: 20px;
             color: var(--text);
 
         }
+
         p {
 
             margin-top: 20px;
             text-align: center;
             font-weight: 400;
-            font-size: 20px;
+            font-size: clamp(16px, 2vw, 20px);
             font-family: 'Montserrat', sans-serif;
             color: var(--muted);
         }
     }
+
     .Inspiration-Collection-images {
 
         margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: clamp(24px, 4vw, 60px);
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .image1 {
-                margin-top: 38px;
+            margin-top: 38px;
         }
+
         .image2 {
-                margin-bottom: 38px;
+            margin-bottom: 38px;
         }
+
         .image3 {
-                margin-top: 38px;
+            margin-top: 38px;
+        }
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    section.Inspiration-Collection {
+
+        .Inspiration-Collection-images {
+            grid-template-columns: 1fr;
+            max-width: 310px;
+
+            .image1,
+            .image2,
+            .image3 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    section.Inspiration-Collection {
+        padding: 40px 16px 0;
+
+        .Inspiration-Collection-images {
+            gap: 24px;
         }
     }
 }

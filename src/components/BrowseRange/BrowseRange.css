@@ -1,44 +1,75 @@
- .Browse-The-Range {
-     margin-top: 60px;
-     color: var(--text);
-     padding: 0 24px;
+.Browse-The-Range {
+    margin-top: 60px;
+    color: var(--text);
+    padding: 0 24px;
 
-     div {
-         h2 {
-             text-align: center;
-             font-weight: 700;
-             font-size: 32px;
-             font-family: 'Montserrat', sans-serif;
-             color: var(--text);
+    div {
+        h2 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 32px;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text);
 
-         }
+        }
 
-         p {
+        p {
 
-             margin-top: 20px;
-             text-align: center;
-             font-weight: 400;
-             font-size: 20px;
-             font-family: 'Montserrat', sans-serif;
-             color: var(--muted);
-         }
-     }
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--muted);
+        }
+    }
 
-     .Browse-The-Range-images {
+    .Browse-The-Range-images {
 
-         margin-top: 50px;
-         display: flex;
-         justify-content: center;
-         gap: 20px;
-         flex-wrap: wrap;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: clamp(20px, 4vw, 60px);
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
 
-         div {
-             p {
+        div {
+            p {
 
-                 font-weight: 600;
-                 font-size: 24px;
-                 color: var(--text);
-             }
-         }
-     }
- }
+                font-weight: 600;
+                font-size: clamp(18px, 2.5vw, 24px);
+                color: var(--text);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1210px) {
+    .Browse-The-Range .Browse-The-Range-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 420px;
+
+        div {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    section {
+        div.Browse-The-Range-images {
+            div {
+                img {
+                    max-width: 310px;
+                }
+            }
+        }
+    }
+}
