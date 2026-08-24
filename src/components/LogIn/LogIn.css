@@ -1,0 +1,63 @@
+.login-page {
+    display: grid;
+    min-height: calc(100vh - 120px);
+    place-items: center;
+    padding: 48px 24px;
+    background: url('../../assets/Herosecimage.webp') center / cover no-repeat;
+
+    .login-form {
+        display: grid;
+        width: min(100%, 420px);
+        gap: 18px;
+        padding: 32px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+
+        h1 {
+            margin: 0 0 8px;
+            color: var(--text);
+            font-size: 28px;
+        }
+
+        label {
+            display: grid;
+            gap: 6px;
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        input {
+            min-height: 44px;
+            padding: 8px 12px;
+            color: var(--text);
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+
+        button {
+            min-height: 46px;
+            margin-top: 6px;
+            color: var(--button-text);
+            background: var(--accent);
+            border: 0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        p {
+            margin: 0;
+            color: var(--text);
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+    }
+}

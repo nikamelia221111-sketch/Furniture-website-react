@@ -53,11 +53,12 @@
         position: relative;
         display: flex;
         justify-content: center;
+        width: min(100%, clamp(280px, 42vw, 500px));
 
-        img {
+        img:not(.deco) {
 
             position: relative;
-            width: min(100%, 500px);
+            width: 100%;
             height: auto;
             z-index: 1;
             border-radius: 16px;
@@ -71,8 +72,8 @@
             max-width: none;
             max-height: 289px;
             top: 50%;
-            left: 105%;
-            transform: translate(-50%, -50%);
+            left: 100%;
+            transform: translateY(-50%);
         }
     }
 }
@@ -93,23 +94,6 @@
             }
             button {
                 align-self: center;
-            }
-        }
-    }
-}
-
-@media (max-width: 700px) {
-    .Beautify-Your-Space {
-        padding: 40px 16px;
-        div.right {
-            img {
-                max-width: 80vw;
-                max-height: 422px;
-                object-fit: contain;
-            }
-            img.deco {
-                max-width: 204px;
-                max-height: 198px;
             }
         }
     }

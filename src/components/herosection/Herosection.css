@@ -43,7 +43,10 @@
             color: var(--muted);
             margin-top: 20px;
         }
-        button {
+        button,
+        .hero-button {
+            display: inline-grid;
+            place-items: center;
             font-weight: 700;
             font-size: 16px;
             line-height: 100%;
@@ -55,6 +58,7 @@
             color: var(--button-text);
             cursor: pointer;
             margin-top: 30px;
+            text-decoration: none;
 
         }
     }

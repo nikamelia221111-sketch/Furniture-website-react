@@ -1,6 +1,7 @@
 import './Herosection.css'
+import { Link } from 'react-router-dom'
 
-function HeroSection() {
+function HeroSection({ user }) {
   return (
     <div className="herosec">
       <div>
@@ -10,7 +11,11 @@ function HeroSection() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
           ullamcorper mattis.
         </p>
-        <button>BUY NOW</button>
+        {user ? (
+          <button>BUY NOW</button>
+        ) : (
+          <Link className="hero-button" to="/register">BUY NOW</Link>
+        )}
       </div>
     </div>
   );
