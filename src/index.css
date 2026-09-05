@@ -34,6 +34,7 @@
   --button-text: #ffffff;
   --button-hover: #043a54;
   --burger-hover: rgba(204, 204, 204, 0.514);
+  --input: #f7f7f7 ;
 }
 
 .theme-dark {
@@ -53,6 +54,7 @@
   --button-text: #07131d;
   --button-hover: #dff7ff;
   --burger-hover: rgba(63, 63, 63, 0.418);
+  --input: #384a7098;
 }
 
 body {

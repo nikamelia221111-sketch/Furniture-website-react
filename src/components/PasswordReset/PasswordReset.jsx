@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
-import './Login.css'
+import './PasswordReset.css'
 
 function Login({ onLogin }) {
   const navigate = useNavigate()
@@ -15,19 +15,12 @@ function Login({ onLogin }) {
   return (
     <main className="login-page">
       <form className="login-form" onSubmit={handleSubmit}>
-        <h1>Log in</h1>
+        <h1>Reset Password</h1>
         <label>
           Email
           <input type="email" name="email" autoComplete="email" required />
         </label>
-        <label>
-          Password
-          <input type="password" name="password" autoComplete="current-password" required />
-        </label>
-        <button type="submit">Log In</button>
-        <p>
-          don't have an account? <Link to="/register">Sign up</Link>
-        </p>
+        <Link to="/ChangePassword"><button type="submit">Reset Password</button></Link>
       </form>
     </main>
   )

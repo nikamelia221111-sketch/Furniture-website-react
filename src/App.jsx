@@ -10,7 +10,8 @@ import HowItWorks from './components/HowItWorks/HowItWorks';
 import MailingList from './components/MailingList/MailingList';
 import Footer from './components/Footer/footer';
 import Register from './components/Register/Register';
-import Login from './components/LogIn/LogIn';
+import Login from './components/PasswordReset/PasswordReset';
+import ChangePassword from './components/ChangePassword/ChangePassword';
 import './App.css'
 
 function App() {
@@ -36,7 +37,8 @@ function App() {
         onLogout={handleLogout}
       />
       <Routes>
-        <Route path="/login" element={<Login onLogin={handleLogin} />} />
+        <Route path='/ChangePassword' element={<ChangePassword onLogin={handleLogin} />} />
+        <Route path="/PasswordReset" element={<Login onLogin={handleLogin} />} />
         <Route path="/register" element={<Register onLogin={handleLogin} />} />
         <Route path="*" element={
           <>
