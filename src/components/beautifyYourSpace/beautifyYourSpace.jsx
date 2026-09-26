@@ -1,9 +1,8 @@
 import beautifyYourSpaceImage from '../../assets/Beautify-Your-Space-img.webp'
 import greenHalfCircle from '../../assets/green-half-circle.webp'
-import './beautifyYourSpace.css'
+import './BeautifyYourSpace.css'
 
-
-function beautifyYourSpace() {
+function BeautifyYourSpace() {
     return (
         <>
             <section className="Beautify-Your-Space">
@@ -22,4 +21,4 @@ function beautifyYourSpace() {
     )
 }
 
-export default beautifyYourSpace
+export default BeautifyYourSpace

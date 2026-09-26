@@ -8,7 +8,8 @@ function Register({ onLogin }) {
     const [formValues, setFormValues] = useState({ name: '', email: '', password: '' })
 
     function handleChange(event) {
-        setFormValues({ ...formValues, [event.target.name]: event.target.value })
+        const { name, value } = event.target
+        setFormValues((prev) => ({ ...prev, [name]: value }))
     }
 
     function handleContinue(event) {
@@ -24,6 +25,11 @@ function Register({ onLogin }) {
 
     function handleSubmit(event) {
         event.preventDefault()
+
+        if (!event.currentTarget.checkValidity()) {
+            event.currentTarget.reportValidity()
+            return
+        }
 
         onLogin({
             name: formValues.name,
@@ -42,15 +48,20 @@ function Register({ onLogin }) {
                         </button>
                         <h1>Finish signing up</h1>
                     </div>
-                ) : <h1>Create an account</h1>}
-                {activeTab !== 2 && <div className="register-tabs">
-                    <button type="button" className={activeTab === 0 ? 'active' : ''} onClick={() => setActiveTab(0)}>
-                        Sign Up
-                    </button>
-                    <button type="button" className={activeTab === 1 ? 'active' : ''} onClick={() => setActiveTab(1)}>
-                        Log In
-                    </button>
-                </div>}
+                ) : (
+                    <h1>Create an account</h1>
+                )}
+
+                {activeTab !== 2 && (
+                    <div className="register-tabs">
+                        <button type="button" className={activeTab === 0 ? 'active' : ''} onClick={() => setActiveTab(0)}>
+                            Sign Up
+                        </button>
+                        <button type="button" className={activeTab === 1 ? 'active' : ''} onClick={() => setActiveTab(1)}>
+                            Log In
+                        </button>
+                    </div>
+                )}
 
                 {activeTab === 0 ? (
                     <div className="register-panel">
@@ -68,7 +79,7 @@ function Register({ onLogin }) {
                     <div className="register-panel">
                         <label>
                             Email
-                            <input type="email" name='email' value={formValues.email} onChange={handleChange} autoComplete='email' required />
+                            <input type="email" name="email" value={formValues.email} onChange={handleChange} autoComplete="email" required />
                         </label>
                         <label>
                             Password

@@ -1,30 +1,28 @@
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Header from './components/Header/Header';
-import HeroSection from './components/HeroSection/Herosection';
-import HeaderInfo from './components/HeaderInfo/Headerinfo';
-import InspirationCollection from './components/InspirationCollection/inspirationCollection';
-import BeautifyYourSpace from './components/BeautifyYourSpace/beautifyYourSpace';
-import BrowseRange from './components/BrowseRange/BrowseRange';
-import HowItWorks from './components/HowItWorks/HowItWorks';
-import MailingList from './components/MailingList/MailingList';
-import Footer from './components/Footer/footer';
-import Register from './components/Register/Register';
-import Login from './components/PasswordReset/PasswordReset';
-import ChangePassword from './components/ChangePassword/ChangePassword';
+import Header from './components/Header/Header'
+import HeroSection from './components/HeroSection/HeroSection'
+import HeaderInfo from './components/HeaderInfo/HeaderInfo'
+import InspirationCollection from './components/InspirationCollection/InspirationCollection'
+import BeautifyYourSpace from './components/BeautifyYourSpace/BeautifyYourSpace'
+import BrowseRange from './components/BrowseRange/BrowseRange'
+import HowItWorks from './components/HowItWorks/HowItWorks'
+import MailingList from './components/MailingList/MailingList'
+import Footer from './components/Footer/Footer'
+import Register from './components/Register/Register'
+import Login from './components/PasswordReset/PasswordReset'
+import ChangePassword from './components/ChangePassword/ChangePassword'
 import './App.css'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
-  const [user, setUser] = useState(
-    JSON.parse(localStorage.getItem("user"))
-  )
+  const [user, setUser] = useState(null)
+
   function handleLogin(userData) {
-    localStorage.setItem("user", JSON.stringify(userData))
     setUser(userData)
   }
+
   function handleLogout() {
-    localStorage.removeItem("user")
     setUser(null)
   }
 

@@ -12,7 +12,7 @@ function Header({ darkMode = false, toggleDarkMode = () => { }, user = null, onL
             <header>
                 <section>
                     <div>
-                        <a className="title" href="#"><Link to="/">Furniture</Link></a>
+                        <Link className="title" to="/">Furniture</Link>
                     </div>
 
                     <button

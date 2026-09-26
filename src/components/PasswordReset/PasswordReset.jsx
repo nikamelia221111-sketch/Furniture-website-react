@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './PasswordReset.css'
 
 function Login({ onLogin }) {
@@ -7,9 +7,14 @@ function Login({ onLogin }) {
   function handleSubmit(event) {
     event.preventDefault()
     const formData = new FormData(event.currentTarget)
+    const email = formData.get('email')?.toString().trim()
 
-    onLogin({ email: formData.get('email') })
-    navigate('/')
+    if (!email) {
+      return
+    }
+
+    onLogin({ email })
+    navigate('/ChangePassword')
   }
 
   return (
@@ -20,7 +25,7 @@ function Login({ onLogin }) {
           Email
           <input type="email" name="email" autoComplete="email" required />
         </label>
-        <Link to="/ChangePassword"><button type="submit">Reset Password</button></Link>
+        <button type="submit">Reset Password</button>
       </form>
     </main>
   )

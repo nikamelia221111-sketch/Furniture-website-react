@@ -4,9 +4,9 @@ import Support from '../../assets/Support.svg'
 import SupportDark from '../../assets/Support-Dark.svg'
 import AuthenticityDark from '../../assets/Authenticity-Dark.png'
 import FreeDeliveryDark from '../../assets/Free-Delivery-Dark.svg'
-import './headerinfo.css'
+import './HeaderInfo.css'
 
-function Headerinfo({ darkMode = false }) {
+function HeaderInfo({ darkMode = false }) {
     return (
         <>
             <div className="headerinfo">
@@ -38,4 +38,4 @@ function Headerinfo({ darkMode = false }) {
     )
 }
 
-export default Headerinfo
+export default HeaderInfo

@@ -49,12 +49,12 @@ function ChangePassword() {
 
         <label>
           New password
-          <input type="password" name="password" value={formValues.password} onChange={handleChange} autoComplete="new-password" minLength={8} maxLength={20}pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" required/>
+          <input type="password" name="password" value={formValues.password} onChange={handleChange} autoComplete="new-password" minLength={8} maxLength={20} pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" required />
         </label>
 
         <label>
           Confirm Password
-          <input type="password" name="confirmPassword" value={formValues.confirmPassword} onChange={handleChange} autoComplete="new-password" minLength={8} maxLength={20}pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" required/>
+          <input type="password" name="confirmPassword" value={formValues.confirmPassword} onChange={handleChange} autoComplete="new-password" minLength={8} maxLength={20} pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" required />
         </label>
 
         {passwordError && <p className="password-error">{passwordError}</p>}

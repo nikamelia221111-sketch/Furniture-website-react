@@ -1,12 +1,10 @@
-import instagramShop1 from "../../assets/Instagram-Shop-1.webp";
-import instagramShop2 from "../../assets/Instagram-Shop-2.webp";
-import instagramShop3 from "../../assets/Instagram-Shop-3.webp";
-import instagramShop4 from "../../assets/Instagram-Shop-4.webp";
-import './footer.css';
+import instagramShop1 from "../../assets/Instagram-Shop-1.webp"
+import instagramShop2 from "../../assets/Instagram-Shop-2.webp"
+import instagramShop3 from "../../assets/Instagram-Shop-3.webp"
+import instagramShop4 from "../../assets/Instagram-Shop-4.webp"
+import './Footer.css'
 
-
-
-function footer() {
+function Footer() {
     return (
         <>
             <footer>
@@ -34,6 +32,4 @@ function footer() {
     )
 }
 
-
-
-export default footer
+export default Footer

@@ -1,11 +1,9 @@
 import ICimage1 from '../../assets/inspration-collection-img1.webp'
 import ICimage2 from '../../assets/inspration-collection-img2.webp'
 import ICimage3 from '../../assets/inspration-collection-img3.webp'
-import './inspirationCollection.css'
+import './InspirationCollection.css'
 
-
-
-function inspirationCollection() {
+function InspirationCollection() {
     return (
         <>
             <section className="Inspiration-Collection">
@@ -28,5 +26,4 @@ function inspirationCollection() {
     )
 }
 
-
-export default inspirationCollection
+export default InspirationCollection
