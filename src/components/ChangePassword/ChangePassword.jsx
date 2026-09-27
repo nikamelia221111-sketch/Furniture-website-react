@@ -39,7 +39,7 @@ function ChangePassword() {
     }
 
     setPasswordError('')
-    navigate('/register')
+    navigate('/')
   }
 
   return (
