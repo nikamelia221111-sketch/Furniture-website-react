@@ -10,7 +10,8 @@ import HowItWorks from './components/HowItWorks/HowItWorks'
 import MailingList from './components/MailingList/MailingList'
 import Footer from './components/Footer/Footer'
 import Register from './components/Register/Register'
-import Login from './components/PasswordReset/PasswordReset'
+import Login from './components/LogIn/LogIn'
+import PasswordReset from './components/PasswordReset/PasswordReset'
 import ChangePassword from './components/ChangePassword/ChangePassword'
 import './App.css'
 
@@ -36,8 +37,9 @@ function App() {
       />
       <Routes>
         <Route path='/ChangePassword' element={<ChangePassword onLogin={handleLogin} />} />
-        <Route path="/PasswordReset" element={<Login onLogin={handleLogin} />} />
+        <Route path="/PasswordReset" element={<PasswordReset onLogin={handleLogin} />} />
         <Route path="/register" element={<Register onLogin={handleLogin} />} />
+        <Route path="/login" element={<Login onLogin={handleLogin} />} />
         <Route path="*" element={
           <>
             <HeroSection user={user} />

@@ -1,11 +1,11 @@
-.password-reset-page {
+.login-page {
     display: grid;
     min-height: calc(100vh - 120px);
     place-items: center;
     padding: 48px 24px;
     background: url('../../assets/Herosecimage.webp') center / cover no-repeat;
 
-    .password-reset-form {
+    .login-form {
         display: grid;
         width: min(100%, 420px);
         gap: 18px;
@@ -37,10 +37,7 @@
             border-radius: 4px;
         }
 
-
-
         button {
-            width: 100%;
             min-height: 46px;
             margin-top: 6px;
             color: var(--button-text);
@@ -56,13 +53,11 @@
             color: var(--text);
             text-align: center;
         }
-
         a {
-            display: block;
             text-decoration: none;
             color: var(--accent);
             font-weight: 600;
         }
-
+        
     }
 }

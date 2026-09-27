@@ -18,8 +18,8 @@ function Login({ onLogin }) {
   }
 
   return (
-    <main className="login-page">
-      <form className="login-form" onSubmit={handleSubmit}>
+    <main className="password-reset-page">
+      <form className="password-reset-form" onSubmit={handleSubmit}>
         <h1>Reset Password</h1>
         <label>
           Email
